@@ -1,0 +1,11 @@
+{
+  "name": "create-uphold-app",
+  "version": "0.0.1",
+  "description": "Create JavaScript applications using Uphold's preferred stack",
+  "bin": "./bin/create-uphold-app.js",
+  "author": "Ricardo Lopes",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.1"
+  }
+}
