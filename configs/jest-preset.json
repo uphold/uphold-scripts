@@ -1,0 +1,14 @@
+{
+  "clearMocks": true,
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "*/**/*.js",
+    "!coverage/**/*",
+    "!test/**/*"
+  ],
+  "modulePaths": [
+    "<rootDir>"
+  ],
+  "restoreMocks": true,
+  "testEnvironment": "node"
+}
