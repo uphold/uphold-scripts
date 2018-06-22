@@ -1,5 +1,14 @@
 {
   "devDependencies": {
-    "lerna": "^2.11.0"
+    "eslint": "^4.19.1",
+    "eslint-config-uphold": "^0.1.1",
+    "lerna": "^2.11.0",
+    "pre-commit": "^1.2.2"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "scripts": {
+    "lint": "./packages/uphold-scripts/bin/uphold-scripts-lint"
   }
 }
