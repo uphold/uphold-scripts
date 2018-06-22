@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+set -e
+
+FILE="$(dirname "$0")/uphold-scripts-$1";
+STATUS=0;
+
+if [[ ! -f $FILE ]]; then
+  FILE="$(dirname "$0")/uphold-scripts-help";
+  STATUS=1;
+fi
+
+if [[ $# -gt 0 ]]; then
+  shift;
+fi
+
+sh $FILE $@;
+exit $STATUS;

@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+jest --preset ./node_modules/uphold-scripts/configs/jest-preset.json

@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+echo 'uphold-scripts [command] [options]';
+echo '';
+echo 'Commands:';
+echo '  changelog [version]  Generate changelog file';
+echo '  help                 Display this help section';
+echo '  lint                 Lint JS files';
+echo '  test                 Run the test suite';
+echo '  version              Tag a new version';
