@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-npm version $2 -m "Release %s"
+npm version $1 -m "Release %s"
