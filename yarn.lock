@@ -3518,16 +3518,6 @@ unset-value@^1.0.0:
     has-value "^0.3.1"
     isobject "^3.0.0"
 
-uphold-scripts@./:
-  version "0.0.1"
-  dependencies:
-    "@uphold/github-changelog-generator" "^0.7.0"
-    commander "^2.16.0"
-    eslint "^5.2.0"
-    eslint-config-uphold "^0.2.0"
-    jest "^23.4.2"
-    pre-commit "^1.2.2"
-
 uri-js@^4.2.1:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/uri-js/-/uri-js-4.2.2.tgz#94c540e1ff772956e2299507c010aea6c8838eb0"
