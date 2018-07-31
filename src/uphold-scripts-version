@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-npm changelog && git add -A CHANGELOG.md
+npm run changelog && git add -A CHANGELOG.md
