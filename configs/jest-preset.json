@@ -3,6 +3,7 @@
   "collectCoverage": true,
   "collectCoverageFrom": [
     "*/**/*.js",
+    "!config/**/*",
     "!coverage/**/*",
     "!test/**/*"
   ],
