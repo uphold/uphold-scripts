@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-github-changelog-generator --future-release=v$1 > CHANGELOG.md
+github-changelog-generator -f $1 -t v$1 > CHANGELOG.md
