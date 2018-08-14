@@ -24,7 +24,7 @@ This is how a `package.json` could look like when making use of these scripts:
     "version": "uphold-scripts version"
   },
   "devDependencies": {
-    "uphold-scripts": "git+ssh://git@github.com/uphold/uphold-scripts#v0.1.0"
+    "uphold-scripts": "git+ssh://git@github.com/uphold/uphold-scripts#v<version>"
   },
   "pre-commit": [
     "lint"
