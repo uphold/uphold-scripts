@@ -31,8 +31,14 @@ This is how a `package.json` could look like when making use of these scripts:
     "uphold-scripts": "^0.4.0"
   },
   "pre-commit": [
-    "lint"
-  ]
+    "lint-staged --quiet"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "uphold-scripts lint",
+      "git add"
+    ]
+  }
 }
 ```
 
