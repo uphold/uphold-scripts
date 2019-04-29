@@ -2,10 +2,8 @@
   "clearMocks": true,
   "collectCoverage": true,
   "collectCoverageFrom": [
-    "*/**/*.js",
-    "!config/**/*",
-    "!coverage/**/*",
-    "!test/**/*"
+    "src/**/*.js",
+    "apps/**/*.js"
   ],
   "modulePaths": [
     "<rootDir>"
