@@ -1,6 +1,9 @@
 # Changelog
 
-## [0.2.1](https://github.com/uphold/uphold-scripts/releases/tag/v0.2.1) (2019-06-22)
+## [0.2.2](https://github.com/uphold/create-uphold-app/releases/tag/v0.2.2) (2019-06-28)
+- Bump dependencies [\#15](https://github.com/uphold/uphold-scripts/pull/15) ([ricardobcl](https://github.com/ricardobcl))
+
+## [v0.2.1](https://github.com/uphold/uphold-scripts/releases/tag/v0.2.1) (2019-06-22)
 - Only report coverage for `src` and `apps` folders [\#14](https://github.com/uphold/uphold-scripts/pull/14) ([ricardobcl](https://github.com/ricardobcl))
 
 ## [0.2.0](https://github.com/uphold/uphold-scripts/releases/tag/v0.2.0) (2018-08-14)
