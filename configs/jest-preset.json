@@ -10,5 +10,5 @@
   ],
   "restoreMocks": true,
   "testEnvironment": "node",
-  "testRegex": "((\\.)(test|spec))\\.js$"
+  "testRegex": "\\.test\\.js$"
 }
