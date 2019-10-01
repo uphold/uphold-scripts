@@ -1,6 +1,8 @@
 # Uphold Scripts
 
-Set of scripts and dev dependencies to help with common tasks on Uphold projects.
+Set of [NPM scripts](https://docs.npmjs.com/cli/run-script)
+and [dev dependencies](http://npm.github.io/using-pkgs-docs/package-json/types/devdependencies.html)
+to help with common tasks on Uphold projects.
 
 ## Available Scripts
 
@@ -32,7 +34,7 @@ This is how a `package.json` could look like when making use of these scripts:
 }
 ```
 
-To use the eslint validations, this is the minimal `.eslintrc.yml` required:
+To use the [ESLint](https://eslint.org) validations, this is the minimal `.eslintrc.yml` required:
 
 ```yaml
 extends: uphold
