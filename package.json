@@ -13,7 +13,7 @@
     "version": "uphold-scripts version"
   },
   "dependencies": {
-    "@uphold/github-changelog-generator": "^0.8.1",
+    "@uphold/github-changelog-generator": "^1.0.0",
     "commander": "^2.20.0",
     "eslint": "^6.5.1",
     "eslint-config-uphold": "^1.0.0",
