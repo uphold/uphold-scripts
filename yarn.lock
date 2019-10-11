@@ -1170,10 +1170,10 @@ eslint-config-prettier@^6.0.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-config-uphold@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-uphold/-/eslint-config-uphold-1.0.0.tgz#2ced07afeb159e33dc502ae5977401c032e17272"
-  integrity sha512-jZn1GonpQD1cnrB3zIj7CjTtALr18t8p1tUqitJ3oZuHtGQKE05b8NYDluxL0IJ9WtlLZgX/mr8yjf4DRxGFDQ==
+eslint-config-uphold@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-uphold/-/eslint-config-uphold-1.0.1.tgz#7ad01edf7ac75d40545fb15570bc8fd8165a11d1"
+  integrity sha512-X+13CuTmJ4Cryl+kW/5y1kl1e3Getbqr39Rpd54aX1dilGF8nfFIx0XQkBnFax9lZ13Dt0cjQPfki4PS00c0sQ==
   dependencies:
     babel-eslint "^10.0.2"
     eslint-config-prettier "^6.0.0"
