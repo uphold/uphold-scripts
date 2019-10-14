@@ -6,6 +6,7 @@
   "author": "Ricardo Lopes",
   "license": "MIT",
   "precommit.silent": true,
+  "repository": "uphold/uphold-scripts",
   "scripts": {
     "changelog": "uphold-scripts changelog $npm_package_version",
     "release": "uphold-scripts release",
