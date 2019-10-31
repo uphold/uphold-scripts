@@ -1,8 +1,10 @@
 # Uphold Scripts
 
+[![npm][npm-image]][npm-url]
+
 Set of [NPM scripts](https://docs.npmjs.com/cli/run-script)
 and [dev dependencies](http://npm.github.io/using-pkgs-docs/package-json/types/devdependencies.html)
-to help with common tasks on Uphold projects.
+to help with common tasks on [Uphold projects](https://github.com/uphold).
 
 ## Available Scripts
 
@@ -43,3 +45,6 @@ extends: uphold
 ## License
 
 MIT
+
+[npm-image]: https://img.shields.io/npm/v/uphold-scripts/latest
+[npm-url]: https://www.npmjs.com/package/uphold-scripts
