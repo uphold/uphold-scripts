@@ -1,3 +1,16 @@
 #!/usr/bin/env sh
 
-github-changelog-generator -f $1 -t v$1 > CHANGELOG.md
+while [[ "$#" -gt 0 ]]; do
+  case $1 in
+    -f|--future-release) release="-f $2"; shift ;;
+    -t|--future-release-tag) tag="-t $2"; shift ;;
+    -*) arguments=$1; shift ;;
+    *) default=$1; shift ;;
+  esac
+  shift
+done
+
+release=${release:-${default:+"-f v$default"}}
+tag=${tag:-${default:+"-t v$default"}}
+
+github-changelog-generator $release $tag $arguments > CHANGELOG.md
