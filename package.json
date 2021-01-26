@@ -16,8 +16,8 @@
   "dependencies": {
     "@uphold/github-changelog-generator": "^1.0.1",
     "commander": "^2.20.0",
-    "eslint": "^6.5.1",
-    "eslint-config-uphold": "^1.0.1",
+    "eslint": "^7.18.0",
+    "eslint-config-uphold": "https://github.com/uphold/eslint-config-uphold.git#support/update-eslint",
     "jest": "^24.8.0",
     "pre-commit": "^1.2.2",
     "prettier": "^1.18.2"
