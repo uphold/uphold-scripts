@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.5.0](https://github.com/uphold/uphold-scripts/releases/tag/v0.5.0) (2021-01-29)
+- Update eslint-config-uphold@2.0.0 [\#35](https://github.com/uphold/uphold-scripts/pull/35) ([diogotorres97](https://github.com/diogotorres97))
+- Bump node-fetch from 2.6.0 to 2.6.1 [\#32](https://github.com/uphold/uphold-scripts/pull/32) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump ini from 1.3.5 to 1.3.8 [\#34](https://github.com/uphold/uphold-scripts/pull/34) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump https-proxy-agent from 2.2.1 to 2.2.4 [\#29](https://github.com/uphold/uphold-scripts/pull/29) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump lodash from 4.17.11 to 4.17.20 [\#38](https://github.com/uphold/uphold-scripts/pull/38) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump acorn from 7.1.0 to 7.4.1 [\#37](https://github.com/uphold/uphold-scripts/pull/37) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update jest@26.6.3 [\#36](https://github.com/uphold/uphold-scripts/pull/36) ([diogotorres97](https://github.com/diogotorres97))
+- Add NPM badge to README [\#26](https://github.com/uphold/uphold-scripts/pull/26) ([waldyrious](https://github.com/waldyrious))
+- Improve documentation for published package [\#25](https://github.com/uphold/uphold-scripts/pull/25) ([rplopes](https://github.com/rplopes))
+
 ## [0.4.0](https://github.com/uphold/uphold-scripts/releases/tag/v0.4.0) (2019-10-14)
 - Update eslint-config-uphold@1.0.1 [\#24](https://github.com/uphold/uphold-scripts/pull/24) ([rplopes](https://github.com/rplopes))
 - Update @uphold/github-changelog-generator@1.0.1 [\#23](https://github.com/uphold/uphold-scripts/pull/23) ([rplopes](https://github.com/rplopes))
