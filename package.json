@@ -1,6 +1,6 @@
 {
   "name": "uphold-scripts",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Set of scripts and dev dependencies to help with common tasks on Uphold projects",
   "bin": "./src/index.js",
   "author": "Ricardo Lopes",

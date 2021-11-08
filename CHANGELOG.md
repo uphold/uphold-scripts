@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.5.1](https://github.com/uphold/uphold-scripts/releases/tag/v0.5.1) (2021-11-08)
+- Bump dependencies [\#43](https://github.com/uphold/uphold-scripts/pull/43) ([diogotorres97](https://github.com/diogotorres97))
+
 ## [0.5.0](https://github.com/uphold/uphold-scripts/releases/tag/v0.5.0) (2021-01-29)
 - Update eslint-config-uphold@2.0.0 [\#35](https://github.com/uphold/uphold-scripts/pull/35) ([diogotorres97](https://github.com/diogotorres97))
 - Bump node-fetch from 2.6.0 to 2.6.1 [\#32](https://github.com/uphold/uphold-scripts/pull/32) ([dependabot[bot]](https://github.com/apps/dependabot))
