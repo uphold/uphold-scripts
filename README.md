@@ -14,9 +14,21 @@ to help with common tasks on [Uphold projects](https://github.com/uphold).
 - `test` - run the test suite with jest pre-configured
 - `version` - tag a new version and generate its changelog
 
-## Example Usage
+## Installation
 
-This is how a `package.json` could look like when making use of these scripts:
+Install the package via `yarn`:
+
+```sh
+❯ yarn add uphold-scripts --dev
+```
+
+or via `npm`:
+
+```sh
+❯ npm install uphold-scripts --save-dev
+```
+
+And then configure `package.json` to look like this:
 
 ```json
 {
@@ -26,9 +38,6 @@ This is how a `package.json` could look like when making use of these scripts:
     "release": "uphold-scripts release",
     "test": "uphold-scripts test",
     "version": "uphold-scripts version"
-  },
-  "devDependencies": {
-    "uphold-scripts": "^0.4.0"
   },
   "pre-commit": [
     "lint-staged -q"
