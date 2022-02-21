@@ -34,7 +34,7 @@ This is how a `package.json` could look like when making use of these scripts:
     "lint-staged -q"
   ],
   "lint-staged": {
-    "*.{js,mjs,ts}": ["uphold-scripts lint"]
+    "*.{js,mjs}": ["uphold-scripts lint"]
   }
 }
 ```
