@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.0](https://github.com/uphold/uphold-scripts/releases/tag/v0.6.0) (2022-02-21)
+- Remove unnecessary precommit.silent from package.json [\#51](https://github.com/uphold/uphold-scripts/pull/51) ([satazor](https://github.com/satazor))
+- Fix package json scripts [\#50](https://github.com/uphold/uphold-scripts/pull/50) ([satazor](https://github.com/satazor))
+- Remove .ts files from README example [\#49](https://github.com/uphold/uphold-scripts/pull/49) ([satazor](https://github.com/satazor))
+- Bump eslint dependency to match eslint-config-uphold [\#47](https://github.com/uphold/uphold-scripts/pull/47) ([satazor](https://github.com/satazor))
+- Bump node-fetch from 2.6.6 to 2.6.7 [\#48](https://github.com/uphold/uphold-scripts/pull/48) ([dependabot](https://github.com/apps/dependabot))
+- Add lint staged [\#12](https://github.com/uphold/uphold-scripts/pull/12) ([nunofgs](https://github.com/nunofgs))
+
 ## [0.5.1](https://github.com/uphold/uphold-scripts/releases/tag/v0.5.1) (2021-11-08)
 - Bump dependencies [\#43](https://github.com/uphold/uphold-scripts/pull/43) ([diogotorres97](https://github.com/diogotorres97))
 
