@@ -1,4 +1,4 @@
-# Uphold Scripts
+# uphold-scripts
 
 [![npm][npm-image]][npm-url]
 
