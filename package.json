@@ -8,10 +8,10 @@
   "precommit.silent": true,
   "repository": "uphold/uphold-scripts",
   "scripts": {
-    "changelog": "uphold-scripts changelog $npm_package_version",
-    "release": "uphold-scripts release",
+    "changelog": "./src/uphold-scripts-changelog $npm_package_version",
+    "release": "./src/uphold-scripts-release",
     "reload": "yarn unlink && yarn link",
-    "version": "uphold-scripts version"
+    "version": "./src/uphold-scripts-version"
   },
   "dependencies": {
     "@uphold/github-changelog-generator": "^3.0.0",
