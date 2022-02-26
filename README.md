@@ -35,12 +35,13 @@ And then configure `package.json` to look like this:
   "scripts": {
     "changelog": "uphold-scripts changelog $npm_package_version",
     "lint": "uphold-scripts lint",
+    "lint-staged": "lint-staged -q",
     "release": "uphold-scripts release",
     "test": "uphold-scripts test",
     "version": "uphold-scripts version"
   },
   "pre-commit": [
-    "lint-staged -q"
+    "lint-staged"
   ],
   "lint-staged": {
     "*.{js,mjs}": ["uphold-scripts lint"]
