@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.6.1](https://github.com/uphold/uphold-scripts/releases/tag/v0.6.1) (2022-03-02)
+- Fix lint-staged not working correctly [\#53](https://github.com/uphold/uphold-scripts/pull/53) ([satazor](https://github.com/satazor))
+- Bump eslint-config-uphold@2.3.0 [\#54](https://github.com/uphold/uphold-scripts/pull/54) ([diogotorres97](https://github.com/diogotorres97))
+- Improve installation instructions [\#52](https://github.com/uphold/uphold-scripts/pull/52) ([satazor](https://github.com/satazor))
+
 ## [0.6.0](https://github.com/uphold/uphold-scripts/releases/tag/v0.6.0) (2022-02-21)
 - Remove unnecessary precommit.silent from package.json [\#51](https://github.com/uphold/uphold-scripts/pull/51) ([satazor](https://github.com/satazor))
 - Fix package json scripts [\#50](https://github.com/uphold/uphold-scripts/pull/50) ([satazor](https://github.com/satazor))
