@@ -10,6 +10,5 @@
   ],
   "restoreMocks": true,
   "testEnvironment": "node",
-  "testRegex": "\\.test\\.js$",
-  "testRunner": "jest-jasmine2"
+  "testRegex": "\\.test\\.js$"
 }
