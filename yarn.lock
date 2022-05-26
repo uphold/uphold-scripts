@@ -690,10 +690,10 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@uphold/github-changelog-generator@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@uphold/github-changelog-generator/-/github-changelog-generator-3.0.0.tgz#6933ecb696286a8d39a2c8a781d40d42b3f95c9f"
-  integrity sha512-ud8tBgrKz/eOS2hAZPfwyra5fOUKQB7XSXMvaAYUJoyUuVnoEoMvIhcFQUgeb1SAyFdhuU8xboD1BloHENuqPg==
+"@uphold/github-changelog-generator@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@uphold/github-changelog-generator/-/github-changelog-generator-3.1.0.tgz#84c3fc72b2e70e4af23bc9e2c5f3e557906feb3d"
+  integrity sha512-qdF5HMKJ9VzUw5xhd3SPVlGpoEPAO+2rwEfvMBu0u9enrStSHZf8OgWfyW3FQxMPMAfYvEcorjg/XO9ky+1FSA==
   dependencies:
     "@octokit/graphql" "^4.8.0"
     commander "^8.3.0"
