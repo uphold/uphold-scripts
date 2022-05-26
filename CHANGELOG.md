@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.7.1](https://github.com/uphold/uphold-scripts/releases/tag/v0.7.1) (2022-05-26)
+- Bump @uphold/github-changelog-generator@3.1.0 [\#61](https://github.com/uphold/uphold-scripts/pull/61) ([diogotorres97](https://github.com/diogotorres97))
+
 ## [0.7.0](https://github.com/uphold/uphold-scripts/releases/tag/v0.7.0) (2022-03-08)
 - Lint all files when running lint script [\#56](https://github.com/uphold/uphold-scripts/pull/56) ([satazor](https://github.com/satazor))
 - Bump eslint-config-uphold to v3 [\#55](https://github.com/uphold/uphold-scripts/pull/55) ([satazor](https://github.com/satazor))
