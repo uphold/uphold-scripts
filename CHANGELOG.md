@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.8.0](https://github.com/uphold/uphold-scripts/releases/tag/v0.8.0) (2022-09-08)
+- Update `eslint-config-uphold@^4.0.0` [\#64](https://github.com/uphold/uphold-scripts/pull/64) ([satazor](https://github.com/satazor))
+- Bump minimist from 1.2.5 to 1.2.6 [\#59](https://github.com/uphold/uphold-scripts/pull/59) ([dependabot](https://github.com/apps/dependabot))
+
 ## [0.7.1](https://github.com/uphold/uphold-scripts/releases/tag/v0.7.1) (2022-05-26)
 - Bump @uphold/github-changelog-generator@3.1.0 [\#61](https://github.com/uphold/uphold-scripts/pull/61) ([diogotorres97](https://github.com/diogotorres97))
 
