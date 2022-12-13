@@ -1,0 +1,42 @@
+name: 'Push docker image to ECR'
+inputs:
+  image-tag:
+    required: true
+    type: string
+  registry:
+    required: true
+    type: string
+  repository:
+    required: true
+    type: string
+
+runs:
+  using: "composite"
+  steps:
+    - name: Check if image exists
+      id: image-check
+      env:
+        REPOSITORY: ${{ inputs.repository }}
+        IMAGE_TAG: ${{ inputs.image-tag }}
+      run: |
+        IMAGE_EXISTS=false
+        SEARCH_OPTIONS="--repository-name $REPOSITORY --image-ids=imageTag=$IMAGE_TAG"
+        OUTPUT_OPTIONS="--query images[].imageId.imageTag --output text"
+
+        if [ -n "$(aws ecr batch-get-image $SEARCH_OPTIONS $OUTPUT_OPTIONS)" ]; then
+          IMAGE_EXISTS=true
+        fi
+
+        echo "exists=$IMAGE_EXISTS" >> $GITHUB_OUTPUT
+
+    - name: Docker Push image
+      if: ${{ steps.image-check.outputs.exists == 'false' }}
+      env:
+        REGISTRY: ${{ inputs.registry }}
+        REPOSITORY: ${{ inputs.repository }}
+        IMAGE_TAG: ${{ inputs.image-tag }}
+      run: |
+        FULL_IMAGE_NAME="$REGISTRY/$REPOSITORY"
+
+        docker image tag "$REPOSITORY:$IMAGE_TAG" "$FULL_IMAGE_NAME:$IMAGE_TAG"
+        docker push "$FULL_IMAGE_NAME:$IMAGE_TAG"

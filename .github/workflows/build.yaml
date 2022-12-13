@@ -1,0 +1,91 @@
+name: Build
+
+on:
+  workflow_call:
+    inputs:
+      repository:
+        required: true
+        type: string
+      sha:
+        required: true
+        type: string
+    secrets:
+      AWS_ACCESS_KEY_ID:
+        required: true
+      AWS_SECRET_ACCESS_KEY:
+        required: true
+      
+jobs:
+  build-old:
+    runs-on: [self-hosted, ec2, linux]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Checkout ${{ inputs.repository }} code
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ inputs.repository }}
+          ref: ${{ inputs.sha }}
+          path: ${{ inputs.repository }}
+
+      - name: Setup SSH Keys and known_hosts
+        id: ssh-agent
+        if: ${{ steps.image-check.outputs.exists == 'false' }}
+        run: |
+          eval `ssh-agent`
+          ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
+          echo "SSH_AGENT_PID=$SSH_AGENT_PID" >> $GITHUB_ENV
+          echo "SSH_AUTH_SOCK=$SSH_AUTH_SOCK" >> $GITHUB_ENV
+
+      - name: Docker Build
+        env:
+          DOCKER_BUILDKIT: 1
+          REPOSITORY: ${{ inputs.repository }}
+          IMAGE_TAG: ${{ inputs.sha }}
+        run: |
+          echo "::group::Build docker image"
+          docker build -t "$REPOSITORY:$IMAGE_TAG" --ssh default $REPOSITORY
+          echo "::endgroup::"
+
+      - name: Configure old AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Login to old Amazon ECR
+        id: login-ecr-old
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name:  Push image if it doesn't exists on the old cluster
+        uses: ./.github/actions/push-docker-image
+        with:
+          image-tag: ${{ inputs.sha }}
+          registry: ${{ steps.login-ecr-old.outputs.registry }}
+          repository: ${{ inputs.repository }}
+
+      - name: Configure new AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: us-east-1
+          role-to-assume: arn:aws:iam::137689370297:role/infrastructure-production-ecr-pushpull
+          role-duration-seconds: 1200
+
+      - name: Login to new Amazon ECR
+        id: login-ecr-new
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name:  Push image if it doesn't exists on the new cluster
+        uses: ./.github/actions/push-docker-image
+        with:
+          image-tag: ${{ inputs.sha }}
+          registry: ${{ steps.login-ecr-new.outputs.registry }}
+          repository: ${{ inputs.repository }}
+
+      - name: Shutdown SSH Agent
+        if: ${{ always() && steps.ssh-agent.conclusion == 'success' }}
+        continue-on-error: true
+        run: eval `ssh-agent -k`
