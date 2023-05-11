@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.9.0](https://github.com/uphold/uphold-scripts/releases/tag/v0.9.0) (2023-05-11)
+- Fix missing `jest-jasmine2` dependency [\#71](https://github.com/uphold/uphold-scripts/pull/71) ([fmfmartins](https://github.com/fmfmartins))
+- Bump `jest@29.5.0` [\#70](https://github.com/uphold/uphold-scripts/pull/70) ([fmfmartins](https://github.com/fmfmartins))
+- Set `executableFile` property for all scripts [\#68](https://github.com/uphold/uphold-scripts/pull/68) ([fmfmartins](https://github.com/fmfmartins))
+
 ## [0.8.0](https://github.com/uphold/uphold-scripts/releases/tag/v0.8.0) (2022-09-08)
 - Update `eslint-config-uphold@^4.0.0` [\#64](https://github.com/uphold/uphold-scripts/pull/64) ([satazor](https://github.com/satazor))
 - Bump minimist from 1.2.5 to 1.2.6 [\#59](https://github.com/uphold/uphold-scripts/pull/59) ([dependabot](https://github.com/apps/dependabot))
