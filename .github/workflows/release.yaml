@@ -12,6 +12,11 @@ on:
         - patch
         default: minor
         required: true
+      SKIP_NPM:
+        description: 'Skip publishing to NPM?'
+        type: boolean
+        default: false
+        required: false
 
 jobs:
   release:
@@ -47,4 +52,4 @@ jobs:
         NPM_TOKEN: ${{ secrets.RELEASE_NPM_TOKEN }}
       run: |
         npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
-        npm run release --increment "${{ github.event.inputs.VERSION_BUMP }}" -V
+        npm run release --increment "${{ github.event.inputs.VERSION_BUMP }}" ${{ github.event.inputs.SKIP_NPM == true && '--no-npm' || '' }} -V
