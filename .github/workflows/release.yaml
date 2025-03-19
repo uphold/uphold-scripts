@@ -52,4 +52,8 @@ jobs:
         NPM_TOKEN: ${{ secrets.RELEASE_NPM_TOKEN }}
       run: |
         npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
-        npm run release --increment "${{ github.event.inputs.VERSION_BUMP }}" ${{ github.event.inputs.SKIP_NPM == true && '--no-npm' || '' }} -V
+        if [ "${{ github.event.inputs.SKIP_NPM }}" = "true" ]; then
+          npm run release --increment "${{ github.event.inputs.VERSION_BUMP }}" --no-npm -V
+        else
+          npm run release --increment "${{ github.event.inputs.VERSION_BUMP }}" -V
+        fi
