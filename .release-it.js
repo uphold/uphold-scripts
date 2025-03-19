@@ -11,6 +11,7 @@ module.exports = {
     releaseName: 'v${version}'
   },
   hooks: {
+    'before:init': 'git fetch --prune --prune-tags origin',
     'after:bump': `
       echo "$(npx @uphold/github-changelog-generator -f v\${version})\n$(tail -n +2 CHANGELOG.md)" > CHANGELOG.md &&
       git add CHANGELOG.md --all
