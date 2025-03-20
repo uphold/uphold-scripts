@@ -53,10 +53,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE_GITHUB_TOKEN }}
       if: ${{ github.event.inputs.SKIP_NPM == 'false' }}
-      run: npm run release --increment "${{ github.event.inputs.VERSION_BUMP }}" -V
+      run: npm run release -- --increment "${{ github.event.inputs.VERSION_BUMP }}" -V
 
     - name: Generate release without publishing to npm
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE_GITHUB_TOKEN }}
       if: ${{ github.event.inputs.SKIP_NPM == 'true' }}
-      run: npm run release --increment "${{ github.event.inputs.VERSION_BUMP }}" -V -- --no-npm
+      run: npm run release -- --increment "${{ github.event.inputs.VERSION_BUMP }}" -V --no-npm
