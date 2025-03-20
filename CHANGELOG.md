@@ -1,5 +1,22 @@
 # Changelog
 
+## [v0.10.0](https://github.com/uphold/uphold-scripts/releases/tag/v0.10.0) (2025-03-20)
+- Switch `--no-npm` to `--no-npm.publish` [\#90](https://github.com/uphold/uphold-scripts/pull/90) ([Americas](https://github.com/Americas))
+- Move `--` further up the release arguments [\#89](https://github.com/uphold/uphold-scripts/pull/89) ([Americas](https://github.com/Americas))
+- Prune tags before running the release [\#88](https://github.com/uphold/uphold-scripts/pull/88) ([Americas](https://github.com/Americas))
+- Update release workflow skip conditions for npm publishing [\#87](https://github.com/uphold/uphold-scripts/pull/87) ([risantos](https://github.com/risantos))
+- Update `SKIP_NPM` workflow conditional [\#86](https://github.com/uphold/uphold-scripts/pull/86) ([risantos](https://github.com/risantos))
+- Add `SKIP_NPM` input to release workflow for conditional NPM publishing [\#84](https://github.com/uphold/uphold-scripts/pull/84) ([risantos](https://github.com/risantos))
+- Disable credential persistence in release workflow checkout step [\#83](https://github.com/uphold/uphold-scripts/pull/83) ([risantos](https://github.com/risantos))
+- Fix NPM token environment variable placement in release workflow [\#82](https://github.com/uphold/uphold-scripts/pull/82) ([risantos](https://github.com/risantos))
+- Fix release workflow by updating NPM authorization [\#80](https://github.com/uphold/uphold-scripts/pull/80) ([risantos](https://github.com/risantos))
+- Update release workflow to use `release-it` [\#79](https://github.com/uphold/uphold-scripts/pull/79) ([risantos](https://github.com/risantos))
+- Bump dependencies [\#78](https://github.com/uphold/uphold-scripts/pull/78) ([risantos](https://github.com/risantos))
+- Bump all dependencies [\#75](https://github.com/uphold/uphold-scripts/pull/75) ([kuphold](https://github.com/kuphold))
+- Bump @babel/traverse from 7.21.5 to 7.24.1 [\#76](https://github.com/uphold/uphold-scripts/pull/76) ([dependabot](https://github.com/apps/dependabot))
+- Bump word-wrap from 1.2.3 to 1.2.4 [\#73](https://github.com/uphold/uphold-scripts/pull/73) ([dependabot](https://github.com/apps/dependabot))
+- Bump semver from 6.3.0 to 6.3.1 [\#72](https://github.com/uphold/uphold-scripts/pull/72) ([dependabot](https://github.com/apps/dependabot))
+
 ## [0.9.0](https://github.com/uphold/uphold-scripts/releases/tag/v0.9.0) (2023-05-11)
 - Fix missing `jest-jasmine2` dependency [\#71](https://github.com/uphold/uphold-scripts/pull/71) ([fmfmartins](https://github.com/fmfmartins))
 - Bump `jest@29.5.0` [\#70](https://github.com/uphold/uphold-scripts/pull/70) ([fmfmartins](https://github.com/fmfmartins))
