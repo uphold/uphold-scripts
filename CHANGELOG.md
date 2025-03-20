@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.10.1](https://github.com/uphold/uphold-scripts/releases/tag/v0.10.1) (2025-03-20)
+- Bump all dependencies [\#85](https://github.com/uphold/uphold-scripts/pull/85) ([risantos](https://github.com/risantos))
+
 ## [v0.10.0](https://github.com/uphold/uphold-scripts/releases/tag/v0.10.0) (2025-03-20)
 - Switch `--no-npm` to `--no-npm.publish` [\#90](https://github.com/uphold/uphold-scripts/pull/90) ([Americas](https://github.com/Americas))
 - Move `--` further up the release arguments [\#89](https://github.com/uphold/uphold-scripts/pull/89) ([Americas](https://github.com/Americas))
