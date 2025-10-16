@@ -1,5 +1,10 @@
 # Changelog
 
+## [v0.10.2](https://github.com/uphold/uphold-scripts/releases/tag/v0.10.2) (2025-10-16)
+
+- Fix commander import [\#93](https://github.com/uphold/uphold-scripts/pull/93) ([boliveira](https://github.com/boliveira))
+- Bump `github-changelog-generator` [\#91](https://github.com/uphold/uphold-scripts/pull/91) ([risantos](https://github.com/risantos))
+
 ## [v0.10.1](https://github.com/uphold/uphold-scripts/releases/tag/v0.10.1) (2025-03-20)
 - Bump all dependencies [\#85](https://github.com/uphold/uphold-scripts/pull/85) ([risantos](https://github.com/risantos))
 
