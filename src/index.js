@@ -6,7 +6,7 @@
  * Module dependencies.
  */
 
-const program = require('commander');
+const { program } = require('commander');
 
 /**
  * Program parsing.
