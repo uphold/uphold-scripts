@@ -1,5 +1,10 @@
 # Changelog
 
+## [v0.11.0](https://github.com/uphold/uphold-scripts/releases/tag/v0.11.0) (2026-01-05)
+
+- Update `release` workflow to use trusted publishing [\#94](https://github.com/uphold/uphold-scripts/pull/94) ([risantos](https://github.com/risantos))
+- Bump brace-expansion from 1.1.11 to 1.1.12 [\#92](https://github.com/uphold/uphold-scripts/pull/92) ([dependabot](https://github.com/apps/dependabot))
+
 ## [v0.10.2](https://github.com/uphold/uphold-scripts/releases/tag/v0.10.2) (2025-10-16)
 
 - Fix commander import [\#93](https://github.com/uphold/uphold-scripts/pull/93) ([boliveira](https://github.com/boliveira))
