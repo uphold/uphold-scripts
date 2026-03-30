@@ -1,5 +1,15 @@
 # Changelog
 
+## [v0.11.1](https://github.com/uphold/uphold-scripts/releases/tag/v0.11.1) (2026-03-30)
+
+- Bump brace-expansion from 1.1.12 to 1.1.13 [\#105](https://github.com/uphold/uphold-scripts/pull/105) ([dependabot](https://github.com/apps/dependabot))
+- Bump picomatch from 2.3.1 to 2.3.2 [\#103](https://github.com/uphold/uphold-scripts/pull/103) ([dependabot](https://github.com/apps/dependabot))
+- Bump basic-ftp from 5.0.5 to 5.2.0 [\#99](https://github.com/uphold/uphold-scripts/pull/99) ([dependabot](https://github.com/apps/dependabot))
+- Bump ajv from 6.12.6 to 6.14.0 [\#97](https://github.com/uphold/uphold-scripts/pull/97) ([dependabot](https://github.com/apps/dependabot))
+- Bump flatted from 3.3.3 to 3.4.2 [\#102](https://github.com/uphold/uphold-scripts/pull/102) ([dependabot](https://github.com/apps/dependabot))
+- Bump minimatch from 3.1.2 to 3.1.5 [\#100](https://github.com/uphold/uphold-scripts/pull/100) ([dependabot](https://github.com/apps/dependabot))
+- Bump yaml from 2.7.0 to 2.8.3 [\#104](https://github.com/uphold/uphold-scripts/pull/104) ([dependabot](https://github.com/apps/dependabot))
+
 ## [v0.11.0](https://github.com/uphold/uphold-scripts/releases/tag/v0.11.0) (2026-01-05)
 
 - Update `release` workflow to use trusted publishing [\#94](https://github.com/uphold/uphold-scripts/pull/94) ([risantos](https://github.com/risantos))
